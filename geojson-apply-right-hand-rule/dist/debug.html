@@ -1,0 +1,21 @@
+<html>
+  <!--
+    This file wants to help for your interactive debug purposes!
+    @> npm install -g serve
+    @> serve .
+    Open your browser and enter the URL: http://localhost:5000/dist/debug
+  -->
+  <script type="module" defer>
+    import applyRightHandRuleDefault, { applyRightHandRule, fixRings } from './index.js'
+
+    window.applyRightHandRuleDefault = applyRightHandRuleDefault
+    window.applyRightHandRule = applyRightHandRule
+    window.fixRings = fixRings
+
+    console.log('Exposed imports: ', {
+      applyRightHandRuleDefault,
+      applyRightHandRule,
+      fixRings
+    })
+  </script>
+</html>
