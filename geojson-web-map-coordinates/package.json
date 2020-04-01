@@ -2,6 +2,8 @@
   "name": "geojson-web-map-coordinates",
   "description": "adapts recorded geojson for line rendering beyond longitude +180 / -180 ",
   "version": "1.0.0",
+  "homepage": "https://github:nicomuschert/geojson-trouble",
+  "repository": "github:nicomuschert/geojson-trouble/tree/master/geojson-web-map-coordinates",
   "author": "Nico Muschert",
   "license": "ISC",
   "type": "module",
