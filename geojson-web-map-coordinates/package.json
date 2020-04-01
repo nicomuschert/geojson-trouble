@@ -1,13 +1,14 @@
 {
   "name": "geojson-web-map-coordinates",
   "description": "adapts recorded geojson for line rendering beyond longitude +180 / -180 ",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "homepage": "https://github.com/nicomuschert/geojson-trouble/tree/master/geojson-web-map-coordinates#geojson-web-map-coordinates",
   "repository": "github:nicomuschert/geojson-trouble",
   "author": "Nico Muschert",
   "license": "ISC",
   "type": "module",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist/index.js",
     "dist/debug.html",

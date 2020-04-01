@@ -1,13 +1,14 @@
 {
   "name": "geojson-apply-right-hand-rule",
   "description": "fix the right hand rule for geojson polygons",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "homepage": "https://github.com/nicomuschert/geojson-trouble/tree/master/geojson-apply-right-hand-rule#geojson-apply-right-hand-rule",
   "repository": "github:nicomuschert/geojson-trouble",
   "author": "Nico Muschert",
   "license": "ISC",
   "type": "module",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist/index.js",
     "dist/debug.html",
