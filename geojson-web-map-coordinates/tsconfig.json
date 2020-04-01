@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["es2017"],
+    "newLine": "lf",
+    "strict": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  }
+}

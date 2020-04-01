@@ -1,0 +1,29 @@
+{
+  "name": "geojson-web-map-coordinates",
+  "description": "adapts recorded geojson for line rendering beyond longitude +180 / -180 ",
+  "version": "1.0.0",
+  "author": "Nico Muschert",
+  "license": "ISC",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
+    "coverage": "nyc -r text -e .ts -x 'tests/*.test.ts' npm run test",
+    "build": "npm run b-transpile && npm run b-terse && npm run b-validate",
+    "b-transpile": "cd src && tsc -b --clean && tsc",
+    "b-terse": "cd dist && terser index.js -o index.js --source-map \"content='index.js.map'\" --config-file terser.json",
+    "b-validate": "node --experimental-modules -r source-map-support/register dist/validate.mjs"
+  },
+  "devDependencies": {
+    "@types/geojson": "^7946.0.7",
+    "@types/jasmine": "^3.5.7",
+    "@types/node": "^13.7.0",
+    "jasmine": "^3.5.0",
+    "nyc": "^15.0.0",
+    "source-map-support": "^0.5.16",
+    "terser": "^4.6.4",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.2"
+  },
+  "dependencies": {}
+}

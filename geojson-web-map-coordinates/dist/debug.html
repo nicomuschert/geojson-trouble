@@ -1,0 +1,21 @@
+<html>
+  <!--
+    This file wants to help for your interactive debug purposes!
+    @> npm install -g serve
+    @> serve .
+    Open your browser and enter the URL: http://localhost:5000/dist/debug
+  -->
+  <script type="module" defer>
+    import webmap, { applyWebMapCoordinates, bbox } from './index.js'
+
+    window.webmap = webmap
+    window.applyWebMapCoordinates = applyWebMapCoordinates
+    window.bbox = bbox
+
+    console.log('Exposed imports: ', {
+      webmap,
+      applyWebMapCoordinates,
+      bbox
+    })
+  </script>
+</html>
