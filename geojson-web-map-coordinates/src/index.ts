@@ -49,8 +49,8 @@ export const applyWebMapCoordinates = (geometry: SupportedGeometries, invert: bo
 }
 
 // check if coordinates are not compatible to polygon rings
-const isLineType = (coordinates: Position[] | Position[][]) =>
-  ((isArray(coordinates[0][0]) ? coordinates : [coordinates]) as Position[][]).reduce<boolean>((isLine, coords) => {
+const isLineType = (coordinates: Position[][]) =>
+  coordinates.reduce<boolean>((isLine, coords) => {
     if (isLine) return true
 
     const first = coords[0]

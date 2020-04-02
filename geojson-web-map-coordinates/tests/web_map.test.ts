@@ -103,6 +103,8 @@ describe('geometry types', () => {
 describe('automatic type assignment', () => {
   const line = [[-170, 0], [-195, 0], [-170, 5]]
   const ring = [...line, [-170, 0]]
+  const nohole = [[-180, 1], [-185, 1], [-175, 3], [-171, 3]]
+  const hole = [...nohole, [-180, 1]]
 
   it('interprets not nested arrays', () => {
     expect(applyWebMapCoordinates(line)).toEqual({ type: 'LineString', coordinates: line })
@@ -111,7 +113,11 @@ describe('automatic type assignment', () => {
 
   it('interprets nested arrays', () => {
     expect(applyWebMapCoordinates([line])).toEqual({ type: 'MultiLineString', coordinates: [line] })
+    expect(applyWebMapCoordinates([line, hole])).toEqual({ type: 'MultiLineString', coordinates: [line, hole] })
     expect(applyWebMapCoordinates([ring])).toEqual({ type: 'Polygon', coordinates: [ring] })
+
+    expect(applyWebMapCoordinates([ring, nohole])).toEqual({ type: 'MultiLineString', coordinates: [ring, nohole] })
+    expect(applyWebMapCoordinates([ring, hole])).toEqual({ type: 'Polygon', coordinates: [ring, hole] })
   })
 
   it('interprets deep nested arrays', () => {
