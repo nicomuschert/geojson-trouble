@@ -56,7 +56,7 @@ const isLineType = (coordinates: Position[][]) =>
     const first = coords[0]
     const last = coords[coords.length - 1]
 
-    return coords.length < 3 || first[0] !== last[0] || first[1] !== last[1]
+    return coords.length < 4 || first[0] !== last[0] || first[1] !== last[1]
   }, false)
 
 // using longitudes above and below 180 and -180**
