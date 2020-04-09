@@ -5,7 +5,9 @@ that cross the antimeridian - any number of times.
 
 The case is well explained in [RFC7946 3.1.9.](https://tools.ietf.org/html/rfc7946#section-3.1.9).
 This implementation is pretty generic and works for all geometries.
-Does the RFC show _exactly_ your case? Then you would like to filter (drop) the returned "-180/180\*\*"-segments.
+Does the RFC show _exactly_ your case?
+
+Then you would like to filter (drop) the returned "-180/180\*\*"-segments.
 
 ## Install
 

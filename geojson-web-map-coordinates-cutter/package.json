@@ -1,7 +1,7 @@
 {
   "name": "geojson-web-map-coordinates-cutter",
   "description": "cuts features at 360** intervals",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/nicomuschert/geojson-trouble/tree/master/geojson-web-map-coordinates-cutter#geojson-web-map-coordinates-cutter",
   "repository": "github:nicomuschert/geojson-trouble",
   "author": "Nico Muschert",
