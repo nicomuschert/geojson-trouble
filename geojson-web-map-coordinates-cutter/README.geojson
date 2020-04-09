@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "assume that this is your data",
+        "stroke": "#000"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-190, 30], [200, 30], [200, 15], [-190, 15], [-190, 30]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "how rfc7946 explains antimeridian cutting",
+        "stroke": "#fff"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [[[170, 45], [180, 45]], [[-180, 45], [-160, 45]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "cutted and translated to the -180/180** range",
+        "stroke": "#f0f"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[[180, 52], [170, 52], [170, 47], [180, 47], [180, 52]]],
+          [[[-180, 47], [180, 47], [180, 52], [-180, 52], [-180, 47]]],
+          [[[-180, 47], [-160, 47], [-160, 52], [-180, 52], [-180, 47]]]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "cutted",
+        "stroke": "#f00"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[[-180, -65], [-190, -65], [-190, -60], [-180, -60], [-180, -65]]],
+          [[[-180, -60], [180, -60], [180, -65], [-180, -65], [-180, -60]]],
+          [[[180, -60], [200, -60], [200, -65], [180, -65], [180, -60]]]
+        ]
+      }
+    }
+  ]
+}
