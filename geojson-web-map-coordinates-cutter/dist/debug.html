@@ -1,0 +1,17 @@
+<html>
+  <!--
+    This file wants to help for your interactive debug purposes!
+    @> npm install -g serve
+    @> serve .
+    Open your browser and enter the URL: http://localhost:5000/dist/debug
+  -->
+  <script type="module" defer>
+    import Cutter from './index.js'
+
+    window.Cutter = Cutter
+
+    console.log('Exposed imports: ', {
+      Cutter
+    })
+  </script>
+</html>

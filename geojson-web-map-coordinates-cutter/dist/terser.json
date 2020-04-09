@@ -1,0 +1,8 @@
+{
+  "mangle": true,
+  "compress": true,
+  "output": {
+    "beautify": false,
+    "preamble": "//# sourceMappingURL=./index.js.map"
+  }
+}
