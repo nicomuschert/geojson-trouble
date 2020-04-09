@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "assume that this is your data",
+        "stroke": "#000"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-170, 30], [170, 30]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "how rfc7946 explains antimeridian cutting",
+        "stroke": "#fff"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [[[170, 45], [180, 45]], [[-180, 45], [-170, 45]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "mapped web coordinates",
+        "stroke": "#f00"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-170, 60], [-190, 60]]
+      }
+    }
+  ]
+}
